@@ -1,0 +1,48 @@
+.copyright {
+    font-size: 12px;
+    text-align: center;
+}
+
+.ui-content {
+    text-align: center;
+}
+
+
+/* table styles */
+.tablerow {
+    display: inline-block;
+    width: 100%;
+}
+.left-table {
+    text-align: right;
+    width: 25%; float: left;
+    padding-right: 2%;
+    font-weight: bold;
+}
+.right-table {
+    text-align: left;
+    width: 73%; float: left;
+}
+
+/* bottom back and next buttons */
+.previous-btn {
+    float: left;
+}
+.next-btn {
+    float: right;
+}
+
+/* toggle buttons styles */
+.ui-collapsible-heading-toggle {
+    border: none;
+}
+
+/* ui component tweaks */
+.ui-textalign-left {
+    text-align: left;
+}
+
+/* portfolio item right button stlye fix */
+.portfolio-item .ui-btn-icon-notext {
+    padding: 0 !important;
+}

@@ -1,0 +1,107 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+<!-- Start of index page -->
+    <div data-role="page" data-theme="b" id="index">
+        <div data-role="header" data-position="inline">
+            <h1>HOME</h1>
+        </div><!-- /header -->
+<div class="ui-field-contain">
+    <label for="select-custom-1"></label>
+    <select name="select-custom-1" id="select-custom-1" data-native-menu="false">
+        <option value="index.html">HOME</option>
+        <option value="#about">ABOUT</option>
+        <option value="#services">SERVICES</option>
+    </select>
+    <script>
+    $(function(){
+      // bind change event to select
+      $('#select-custom-1').bind('change', function () {
+          var url = $(this).val(); // get selected value
+          if (url) { // require a URL
+              $.mobile.changePage( url, { transition: "slide", changeHash: false });
+          }
+          return false;
+      });
+    });
+</script>
+</div>
+        <div data-role="content" data-theme="b">
+        <p>Home Page</p>
+        </div><!-- /content -->
+        <div data-role="footer" data-theme="b">
+        </div><!-- /footer -->
+    </div><!-- /index page -->
+
+<!-- Start of about page -->
+    <div data-role="page" data-theme="b" id="about">
+        <div data-role="header" data-position="inline">
+            <h1>ABOUT</h1>
+        </div><!-- /header -->
+<div class="ui-field-contain">
+    <label for="select-custom-1"></label>
+    <select name="select-custom-1" id="select-custom-1" data-native-menu="false">
+        <option value="index.html">HOME</option>
+        <option value="#about">ABOUT</option>
+        <option value="#services">SERVICES</option>
+    </select>
+    <script>
+    $(function(){
+      // bind change event to select
+      $('#select-custom-1').bind('change', function () {
+          var url = $(this).val(); // get selected value
+          if (url) { // require a URL
+              $.mobile.changePage( url, { transition: "slide", changeHash: false });
+          }
+          return false;
+      });
+    });
+</script>
+</div>
+        <div data-role="content" data-theme="b">
+        <p>About Page</p>
+        </div><!-- /content -->
+        <div data-role="footer" data-theme="b">
+        </div><!-- /footer -->
+    </div><!-- /about page -->
+
+    <!-- Start of services page -->
+    <div data-role="page" data-theme="b" id="services">
+        <div data-role="header" data-position="inline">
+            <h1>SERVICES</h1>
+        </div><!-- /header -->
+<div class="ui-field-contain">
+    <label for="select-custom-1"></label>
+    <select name="select-custom-1" id="select-custom-1" data-native-menu="false">
+        <option value="index.html">HOME</option>
+        <option value="#about">ABOUT</option>
+        <option value="#services">SERVICES</option>
+    </select>
+    <script>
+    $(function(){
+      // bind change event to select
+      $('#select-custom-1').bind('change', function () {
+          var url = $(this).val(); // get selected value
+          if (url) { // require a URL
+              $.mobile.changePage( url, { transition: "slide", changeHash: false });
+          }
+          return false;
+      });
+    });
+</script>
+</div>
+        <div data-role="content" data-theme="b">
+        <p>Services Page, Services Page</p>
+        </div><!-- /content -->
+        <div data-role="footer" data-theme="b">
+        </div><!-- /footer -->
+    </div><!-- /services page -->
+
+</body>
+</html>
